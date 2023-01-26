@@ -7,65 +7,55 @@
     <title>CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        font-family: "Inconsolata", monospace;
-      }
-      body {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-      }
-      .splash {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .splash__title {
-        position: absolute;
-        font-size: 72px;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="splash">
-      <div class="splash__bg">
-        <svg width="500" height="500">
-          <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" style="stop-color: rgb(255, 95, 109)"></stop>
-              <stop offset="100%" style="stop-color: rgb(255, 195, 113)"></stop>
-            </linearGradient>
-          </defs>
-          <path fill="url(#gradient)">
-            <animate
-              attributeName="d"
-              dur="10s"
-              repeatCount="indefinite"
-              values="
-                    M463,295.5Q439,341,416,385Q393,429,347,451Q301,473,248,482.5Q195,492,158,452Q121,412,86,379Q51,346,50,298Q49,250,57.5,206Q66,162,94,125.5Q122,89,159,51Q196,13,250.5,11.5Q305,10,353.5,35Q402,60,432.5,104Q463,148,475,199Q487,250,463,295.5Z;
-                    
-                    M450,291Q420,332,403.5,376.5Q387,421,343,442Q299,463,247,477Q195,491,164.5,443Q134,395,99.5,367Q65,339,69,294.5Q73,250,80,211Q87,172,111.5,139.5Q136,107,166.5,61.5Q197,16,250.5,14.5Q304,13,352,37.5Q400,62,428.5,106.5Q457,151,468.5,200.5Q480,250,450,291Z;
-            
-                    M463,295.5Q439,341,416,385Q393,429,347,451Q301,473,248,482.5Q195,492,158,452Q121,412,86,379Q51,346,50,298Q49,250,57.5,206Q66,162,94,125.5Q122,89,159,51Q196,13,250.5,11.5Q305,10,353.5,35Q402,60,432.5,104Q463,148,475,199Q487,250,463,295.5Z
-                    "
-            />
-          </path>
-        </svg>
-      </div>
-      <h1 class="splash__title">Hello</h1>
+  <body class="flex font-sans items-center justify-center h-screen">
+    <div class="flex items-center justify-center">
+      <svg width="500" height="500">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(255, 95, 109)"></stop>
+            <stop offset="100%" style="stop-color: rgb(255, 195, 113)"></stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradient)">
+          <animate
+            attributeName="d"
+            dur="10s"
+            repeatCount="indefinite"
+            values="
+                  M463,295.5Q439,341,416,385Q393,429,347,451Q301,473,248,482.5Q195,492,158,452Q121,412,86,379Q51,346,50,298Q49,250,57.5,206Q66,162,94,125.5Q122,89,159,51Q196,13,250.5,11.5Q305,10,353.5,35Q402,60,432.5,104Q463,148,475,199Q487,250,463,295.5Z;
+                  
+                  M450,291Q420,332,403.5,376.5Q387,421,343,442Q299,463,247,477Q195,491,164.5,443Q134,395,99.5,367Q65,339,69,294.5Q73,250,80,211Q87,172,111.5,139.5Q136,107,166.5,61.5Q197,16,250.5,14.5Q304,13,352,37.5Q400,62,428.5,106.5Q457,151,468.5,200.5Q480,250,450,291Z;
+          
+                  M463,295.5Q439,341,416,385Q393,429,347,451Q301,473,248,482.5Q195,492,158,452Q121,412,86,379Q51,346,50,298Q49,250,57.5,206Q66,162,94,125.5Q122,89,159,51Q196,13,250.5,11.5Q305,10,353.5,35Q402,60,432.5,104Q463,148,475,199Q487,250,463,295.5Z
+                  "
+          />
+        </path>
+      </svg>
+      <h1 class="absolute text-7xl">Hello</h1>
     </div>
     <ul>
-      <li><a href="https://github.com/idelendik/particles-canvas">Particles Canvas</a></li>
-      <li><a href="https://github.com/idelendik/audio-visualizer">Audio Visualizer</a></li>
-      <li><a href="https://github.com/idelendik/change-bg-color">Change BG Color</a></li>
-      <li><a href="https://github.com/idelendik/quote-generator">Quote generator</a></li>
+      <li class="hover:text-rose-300 transition-all">
+        <a href="https://github.com/idelendik/particles-canvas"
+          >Particles Canvas</a
+        >
+      </li>
+      <li class="hover:text-rose-300 transition-all">
+        <a href="https://github.com/idelendik/audio-visualizer"
+          >Audio Visualizer</a
+        >
+      </li>
+      <li class="hover:text-rose-300 transition-all">
+        <a href="https://github.com/idelendik/change-bg-color"
+          >Change BG Color</a
+        >
+      </li>
+      <li class="hover:text-rose-300 transition-all">
+        <a href="https://github.com/idelendik/quote-generator"
+          >Quote generator</a
+        >
+      </li>
     </ul>
     <script></script>
   </body>
